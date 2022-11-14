@@ -1,0 +1,33 @@
+.contacts {
+
+  &__info {
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 32px;
+    }
+
+    @include onDesktop {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+  }
+  &__title {
+    font-size: 14px;
+    color: #9fadc2;
+    margin-bottom: 8px;
+  }
+  &__link {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+  }
+  &__field {
+    margin: 0 0 16px;
+
+    &--end {
+      margin-bottom: 32px;
+    }
+  }
+}

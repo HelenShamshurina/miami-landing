@@ -1,0 +1,39 @@
+.about {
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -1.5px;
+    color: #000;
+    margin-bottom: 48px;
+
+    @include onDesktop {
+      font-size: 48px;
+      line-height: 48px;
+    }
+  }
+  &__title-link {
+    color: $colorBlue;
+    text-decoration: none;
+  }
+  &__subtitle {
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: $colorBlue;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  &__paragraph {
+    font-style: normal;
+    &:not(:last-child) {
+      margin-bottom: 27px;
+    }
+  }
+  &__paragraph--bold {
+    font-weight: 700;
+  }
+}
